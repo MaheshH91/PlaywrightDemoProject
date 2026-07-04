@@ -1,0 +1,14 @@
+{
+    "username":"admin@email.com",
+    "password":"admin@123",
+    "name":"Admin",
+    "interest":["Selenium","Java","TestNg"],
+    "gender":"Male",
+    "address":{
+        "area":"Sector 62",
+        "city":"Noida",
+        "state":"Uttar Pradesh",
+        "country":"India",
+        "pincode":"201301"
+    }
+}

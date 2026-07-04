@@ -1,0 +1,23 @@
+const { expect } = require('@playwright/test');
+
+class HomePage {
+
+    constructor(page) {
+        this.page = page;
+
+        this.manageOption = page.locator("//span[text()='Manage']");
+        this.menu = page.locator("//img[@alt='menu']");
+        this.logoutOption = page.locator("//button[text()='Sign out']");
+    }
+
+    async verifyManageOption() {
+        await expect(this.manageOption).toBeVisible();
+    }
+
+    async logoutFromApplication() {
+        await this.menu.click();
+        await this.logoutOption.click();
+    }
+}
+
+module.exports = HomePage;
