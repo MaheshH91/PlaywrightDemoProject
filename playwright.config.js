@@ -27,7 +27,9 @@ export default defineConfig({
   reporter: [
     ['line'],
     ['html', { outputFolder: 'html-report', open: 'never' }],
-    ['allure-playwright', { resultsDir: 'allure-results' }]
+    ['allure-playwright', { resultsDir: 'allure-results' }],
+    ['list'],
+    ['junit', { outputFile: 'results.xml' }]
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
