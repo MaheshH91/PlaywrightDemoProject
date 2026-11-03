@@ -1,6 +1,6 @@
 const { test } = require('@playwright/test');
 const LoginPage = require('../pages/LoginPage');
-const HomePage = require('../pages/HomePage');
+const HomePage = require('../pages/homepage');
 
 test('Login to Application using POM', async ({ page }) => {
 
