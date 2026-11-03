@@ -29,7 +29,7 @@ test('Valid Login and Logout', async ({ page }) => {
 test('SignUp To Application', async ({ page }) => {
     await page.goto('https://freelance-learn-automation.vercel.app/signup');
 
-    await page.getByPlaceholder('Name').type(testdata.name, { delay: 200 });
+    await page.getByPlaceholder('Name').fill(testdata.name, { delay: 200 });
 
     await page.locator("//input[@id='email']").fill(testdata.username, { delay: 200 });
 
