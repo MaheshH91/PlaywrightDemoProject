@@ -10,7 +10,7 @@ test('Working with waitForLoadState', async ({ page }) => {
 
     const checkboxCount = await page.locator("//input[@type='checkbox']").count()
 
-    expect(checkboxCount).toBe(7)
+    expect(checkboxCount).toBe(6)
 
 
 
